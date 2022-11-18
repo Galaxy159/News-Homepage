@@ -1,0 +1,44 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: $color-off-white;
+  padding-block: 2.8rem 3.2rem;
+  &__logo {
+  }
+  &__menu {
+    z-index: 1;
+    cursor: pointer;
+  }
+  &__nav {
+    display: grid;
+    position: fixed;
+    width: 25.6rem;
+    right: -25.6rem;
+    top: 0;
+    padding: 14.4rem 0 0 2.4rem;
+    background-color: $color-off-white;
+    height: 100vh;
+    grid-template-rows: repeat(5, min-content);
+    row-gap: 2.4rem;
+    transition: 0.5s ease-in-out;
+
+    & a {
+      text-decoration: none;
+      color: $color-blue-dark;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-primary-red;
+      }
+    }
+  }
+}
+
+.show {
+  right: 0;
+}

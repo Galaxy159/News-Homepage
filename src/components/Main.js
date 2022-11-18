@@ -9,7 +9,7 @@ export default function Main() {
     <>
       <main className="main">
         <picture>
-          <source srcSet={heroDesktop} media="(min-width: 480px)"></source>
+          <source srcSet={heroDesktop} media="(min-width: 900px)"></source>
           <img src={hero} alt="hero" className="main__hero" />
         </picture>
         <h1 className="main__headline">The Bright Future of Web 3.0?</h1>

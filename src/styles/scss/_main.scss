@@ -1,0 +1,101 @@
+.main {
+  margin-bottom: 8rem;
+  &__hero {
+    height: 30rem;
+    margin-bottom: 2.4rem;
+  }
+  &__headline {
+    color: $color-blue-dark;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1.6rem;
+  }
+  &__cta {
+    margin-bottom: 6.4rem;
+    &--text {
+      font-weight: 400;
+      line-height: 2.6rem;
+      columns: $color-grayish-blue-dark;
+      margin-bottom: 2.4rem;
+    }
+    &--btn {
+      width: 18.5rem;
+      height: 4.8rem;
+      border: none;
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      letter-spacing: 4.375px;
+      color: $color-off-white;
+      background-color: $color-primary-red;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: $color-blue-dark;
+      }
+    }
+  }
+  &__new {
+    background-color: $color-blue-dark;
+    color: $color-off-white;
+    padding: 2.4rem 2rem;
+    margin-bottom: 6.4rem;
+    &--headline {
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      color: $color-primary-orange;
+      margin-bottom: 3.5rem;
+    }
+    &--item {
+      &-headline {
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin-bottom: 0.8rem;
+      }
+      &-text {
+        font-weight: 400;
+        line-height: 2.6rem;
+      }
+      &:not(:first-child) {
+        margin-top: 3rem;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-grayish-blue-dark;
+        padding-bottom: 3rem;
+      }
+    }
+  }
+
+  &__article {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    margin-bottom: 3.2rem;
+    column-gap: 2.4rem;
+    row-gap: 1.2rem;
+    &--img {
+      height: 13rem;
+      grid-row: 1 / 4;
+    }
+    &--index {
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      color: $color-grayish-blue;
+    }
+    &--headline {
+      font-weight: 800;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      color: $color-blue-dark;
+    }
+    &--text {
+      font-weight: 400;
+      line-height: 2.6rem;
+      color: $color-grayish-blue-dark;
+    }
+  }
+}
