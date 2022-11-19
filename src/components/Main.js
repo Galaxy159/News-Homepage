@@ -4,10 +4,11 @@ import retropc from "../images/image-retro-pcs.jpg";
 import laptop from "../images/image-top-laptops.jpg";
 import gaming from "../images/image-gaming-growth.jpg";
 
-export default function Main() {
+export default function Main(props) {
+  const { homeRef, newRef, popularRef } = props;
   return (
     <>
-      <main className="main">
+      <main ref={homeRef} className="main">
         <div className="main__hero">
           <picture>
             <source srcSet={heroDesktop} media="(min-width: 1110px)"></source>
@@ -25,7 +26,7 @@ export default function Main() {
           </p>
           <button className="main__cta--btn">Read more</button>
         </div>
-        <div className="main__new">
+        <div ref={newRef} className="main__new">
           <h2 className="main__new--headline">New</h2>
           <div className="main__new--item">
             <h3 className="main__new--item-headline">
@@ -54,7 +55,7 @@ export default function Main() {
             </p>
           </div>
         </div>
-        <div className="main__article">
+        <div ref={popularRef} className="main__article">
           <img src={retropc} alt="Retro pc" className="main__article--img" />
           <p className="main__article--index">01</p>
           <h4 className="main__article--headline">Reviving Retro PCs</h4>

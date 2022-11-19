@@ -1,10 +1,17 @@
 import logo from "../images/logo.svg";
 import menu from "../images/icon-menu.svg";
 import menuClose from "../images/icon-menu-close.svg";
-import { useState } from "react";
 
 export default function Heading(props) {
-  const { clicked, setClicked } = props;
+  const { clicked, setClicked, homeRef, newRef, popularRef } = props;
+
+  function scrollToSection(elementRef) {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <>
       <header className="header">
@@ -16,19 +23,39 @@ export default function Heading(props) {
           className="header__menu"
         />
         <nav className={clicked ? "header__nav show" : "header__nav"}>
-          <a href="#0" className="header__nav--home">
+          <a
+            onClick={() => scrollToSection(homeRef)}
+            href="#0"
+            className="header__nav--home"
+          >
             Home
           </a>
-          <a href="#0" className="header__nav--new">
+          <a
+            onClick={() => scrollToSection(newRef)}
+            href="#0"
+            className="header__nav--new"
+          >
             New
           </a>
-          <a href="#0" className="header__nav--popular">
+          <a
+            onClick={() => scrollToSection(popularRef)}
+            href="#0"
+            className="header__nav--popular"
+          >
             Popular
           </a>
-          <a href="#0" className="header__nav--trending">
+          <a
+            onClick={() => scrollToSection(popularRef)}
+            href="#0"
+            className="header__nav--trending"
+          >
             Trending
           </a>
-          <a href="#0" className="header__nav--categories">
+          <a
+            onClick={() => scrollToSection(popularRef)}
+            href="#0"
+            className="header__nav--categories"
+          >
             Categories
           </a>
         </nav>
