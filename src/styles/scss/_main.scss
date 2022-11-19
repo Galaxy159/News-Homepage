@@ -4,8 +4,9 @@
   @include respond(desktop) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
     gap: 3rem;
-    margin-bottom: 12.7rem;
+    margin-bottom: 7rem;
   }
 
   &__hero {
@@ -25,8 +26,6 @@
     margin-bottom: 1.6rem;
 
     @include respond(desktop) {
-      margin: 0;
-
       & h1 {
         color: $color-blue-dark;
         font-weight: 800;
@@ -95,7 +94,7 @@
       font-size: 3.2rem;
       line-height: 3.2rem;
       color: $color-primary-orange;
-      margin-bottom: 3.5rem;
+      margin-bottom: 3.4rem;
 
       @include respond(desktop) {
         font-size: 4rem;
@@ -125,41 +124,50 @@
 
   &__article {
     display: grid;
-    grid-template-columns: min-content 1fr;
-    margin-bottom: 3.2rem;
-    column-gap: 2.4rem;
-    row-gap: 1.2rem;
-
+    gap: 3rem;
+    margin-bottom: 8rem;
     @include respond(desktop) {
-      margin: 0;
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 12.7rem;
     }
 
-    &--img {
-      height: 13rem;
-      grid-row: 1 / 4;
-    }
-    &--index {
-      font-weight: 700;
-      font-size: 3.2rem;
-      line-height: 3.2rem;
-      color: $color-grayish-blue;
-    }
-    &--headline {
-      font-weight: 800;
-      font-size: 1.8rem;
-      line-height: 2.4rem;
-      color: $color-blue-dark;
-      cursor: pointer;
-      transition: all 0.2s;
+    &--item {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      column-gap: 2.4rem;
+      row-gap: 1.2rem;
 
-      &:hover {
-        color: $color-primary-red;
+      @include respond(desktop) {
+        margin: 0;
       }
-    }
-    &--text {
-      font-weight: 400;
-      line-height: 2.6rem;
-      color: $color-grayish-blue-dark;
+
+      &-img {
+        height: 13rem;
+        grid-row: 1 / 4;
+      }
+      &-index {
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        color: $color-grayish-blue;
+      }
+      &-headline {
+        font-weight: 800;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: $color-blue-dark;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+          color: $color-primary-red;
+        }
+      }
+      &--text {
+        font-weight: 400;
+        line-height: 2.6rem;
+        color: $color-grayish-blue-dark;
+      }
     }
   }
 }

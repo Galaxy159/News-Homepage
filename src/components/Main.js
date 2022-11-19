@@ -55,31 +55,39 @@ export default function Main(props) {
             </p>
           </div>
         </div>
-        <div ref={popularRef} className="main__article">
-          <img src={retropc} alt="Retro pc" className="main__article--img" />
-          <p className="main__article--index">01</p>
-          <h4 className="main__article--headline">Reviving Retro PCs</h4>
+      </main>
+      <div className="main__article">
+        <div ref={popularRef} className="main__article--item">
+          <img
+            src={retropc}
+            alt="Retro pc"
+            className="main__article--item-img"
+          />
+          <p className="main__article--item-index">01</p>
+          <h4 className="main__article--item-headline">Reviving Retro PCs</h4>
           <p className="main__article--text">
             What happens when old PCs are given modern upgrades?
           </p>
         </div>
-        <div className="main__article">
-          <img src={laptop} alt="Laptop" className="main__article--img" />
-          <p className="main__article--index">02</p>
-          <h4 className="main__article--headline">Top 10 Laptops of 2022</h4>
+        <div className="main__article--item">
+          <img src={laptop} alt="Laptop" className="main__article--item-img" />
+          <p className="main__article--item-index">02</p>
+          <h4 className="main__article--item-headline">
+            Top 10 Laptops of 2022
+          </h4>
           <p className="main__article--text">
             Our best picks for various needs and budgets.
           </p>
         </div>
-        <div className="main__article">
-          <img src={gaming} alt="Gaming" className="main__article--img" />
-          <p className="main__article--index">03</p>
-          <h4 className="main__article--headline">The Growth of Gaming</h4>
-          <p className="main__article--text">
+        <div className="main__article--item">
+          <img src={gaming} alt="Gaming" className="main__article--item-img" />
+          <p className="main__article--item-index">03</p>
+          <h4 className="main__article--item-headline">The Growth of Gaming</h4>
+          <p className="main__article--item-text">
             How the pandemic has sparked fresh opportunities.
           </p>
         </div>
-      </main>
+      </div>
     </>
   );
 }
