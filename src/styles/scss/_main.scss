@@ -26,13 +26,17 @@
 
     @include respond(desktop) {
       margin: 0;
-      padding-right: 8rem;
 
       & h1 {
         color: $color-blue-dark;
         font-weight: 800;
         font-size: 4rem;
         line-height: 4rem;
+
+        @include respond(desktop) {
+          font-size: 5.6rem;
+          line-height: 5.6rem;
+        }
       }
     }
   }
@@ -59,6 +63,7 @@
       letter-spacing: 4.375px;
       color: $color-off-white;
       background-color: $color-primary-red;
+      text-transform: uppercase;
       cursor: pointer;
       transition: all 0.2s;
 

@@ -41,7 +41,7 @@ body {
 @media (min-width: 1100px) {
   .header {
     position: relative;
-    padding-block: 8.9rem 5.51rem;
+    padding-block: 9rem 5.51rem;
   }
 }
 .header__menu {
@@ -150,13 +150,18 @@ body {
 @media (min-width: 1100px) {
   .main__headline {
     margin: 0;
-    padding-right: 8rem;
   }
   .main__headline h1 {
     color: #00001a;
     font-weight: 800;
     font-size: 4rem;
     line-height: 4rem;
+  }
+}
+@media (min-width: 1100px) and (min-width: 1100px) {
+  .main__headline h1 {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
   }
 }
 .main__cta {
@@ -183,6 +188,7 @@ body {
   letter-spacing: 4.375px;
   color: #fffdfa;
   background-color: #f15e50;
+  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.2s;
 }
