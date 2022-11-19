@@ -1,7 +1,7 @@
 import "./styles/App.css";
 import Heading from "./components/Heading";
 import Main from "./components/Main";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import { useState, useRef } from "react";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         <Main homeRef={homeRef} newRef={newRef} popularRef={popularRef} />
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

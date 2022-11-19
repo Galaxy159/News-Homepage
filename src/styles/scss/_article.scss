@@ -1,0 +1,48 @@
+.main__article {
+  display: grid;
+  gap: 3rem;
+  margin-bottom: 8rem;
+  @include respond(desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 12.7rem;
+  }
+
+  &--item {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 2.4rem;
+    row-gap: 1.2rem;
+
+    @include respond(desktop) {
+      margin: 0;
+    }
+
+    &-img {
+      height: 13rem;
+      grid-row: 1 / 4;
+    }
+    &-index {
+      font-weight: 700;
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      color: $color-grayish-blue;
+    }
+    &-headline {
+      font-weight: 800;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      color: $color-blue-dark;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-primary-red;
+      }
+    }
+    &-text {
+      font-weight: 400;
+      line-height: 2.6rem;
+      color: $color-grayish-blue-dark;
+    }
+  }
+}

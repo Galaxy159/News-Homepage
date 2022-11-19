@@ -1,8 +1,8 @@
 import hero from "../images/image-web-3-mobile.jpg";
 import heroDesktop from "../images/image-web-3-desktop.jpg";
-import retropc from "../images/image-retro-pcs.jpg";
-import laptop from "../images/image-top-laptops.jpg";
-import gaming from "../images/image-gaming-growth.jpg";
+
+import New from "./New";
+import Article from "./Article";
 
 export default function Main(props) {
   const { homeRef, newRef, popularRef } = props;
@@ -26,68 +26,9 @@ export default function Main(props) {
           </p>
           <button className="main__cta--btn">Read more</button>
         </div>
-        <div ref={newRef} className="main__new">
-          <h2 className="main__new--headline">New</h2>
-          <div className="main__new--item">
-            <h3 className="main__new--item-headline">
-              Hydrogen VS Electric Cars
-            </h3>
-            <p className="main__new--item-text">
-              Will hydrogen-fueled cars ever catch up to EVs?
-            </p>
-          </div>
-          <div className="main__new--item">
-            <h3 className="main__new--item-headline">
-              The Downsides of AI Artistry
-            </h3>
-            <p className="main__new--item-text">
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </div>
-          <div className="main__new--item">
-            <h3 className="main__new--item-headline">
-              Is VC Funding Drying Up?
-            </h3>
-            <p className="main__new--item-text">
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </div>
-        </div>
+        <New newRef={newRef} />
       </main>
-      <div className="main__article">
-        <div ref={popularRef} className="main__article--item">
-          <img
-            src={retropc}
-            alt="Retro pc"
-            className="main__article--item-img"
-          />
-          <p className="main__article--item-index">01</p>
-          <h4 className="main__article--item-headline">Reviving Retro PCs</h4>
-          <p className="main__article--item-text">
-            What happens when old PCs are given modern upgrades?
-          </p>
-        </div>
-        <div className="main__article--item">
-          <img src={laptop} alt="Laptop" className="main__article--item-img" />
-          <p className="main__article--item-index">02</p>
-          <h4 className="main__article--item-headline">
-            Top 10 Laptops of 2022
-          </h4>
-          <p className="main__article--item-text">
-            Our best picks for various needs and budgets.
-          </p>
-        </div>
-        <div className="main__article--item">
-          <img src={gaming} alt="Gaming" className="main__article--item-img" />
-          <p className="main__article--item-index">03</p>
-          <h4 className="main__article--item-headline">The Growth of Gaming</h4>
-          <p className="main__article--item-text">
-            How the pandemic has sparked fresh opportunities.
-          </p>
-        </div>
-      </div>
+      <Article articleRef={popularRef} />
     </>
   );
 }
