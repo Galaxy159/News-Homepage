@@ -52,6 +52,10 @@
       line-height: 2.6rem;
       color: $color-grayish-blue-dark;
       margin-bottom: 2.4rem;
+
+      @include respond(desktop) {
+        margin-bottom: 2.9rem;
+      }
     }
     &--btn {
       width: 18.5rem;
@@ -76,7 +80,7 @@
   &__new {
     background-color: $color-blue-dark;
     color: $color-off-white;
-    padding: 2.4rem 2rem;
+    padding: 3.2rem 2.4rem;
     margin-bottom: 6.4rem;
 
     @include respond(desktop) {

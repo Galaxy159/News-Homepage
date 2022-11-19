@@ -14,6 +14,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
+  background-color: #fffdfa;
 }
 
 .container {
@@ -178,6 +179,11 @@ body {
   color: #5d5f79;
   margin-bottom: 2.4rem;
 }
+@media (min-width: 1100px) {
+  .main__cta--text {
+    margin-bottom: 2.9rem;
+  }
+}
 .main__cta--btn {
   width: 18.5rem;
   height: 4.8rem;
@@ -198,7 +204,7 @@ body {
 .main__new {
   background-color: #00001a;
   color: #fffdfa;
-  padding: 2.4rem 2rem;
+  padding: 3.2rem 2.4rem;
   margin-bottom: 6.4rem;
 }
 @media (min-width: 1100px) {
