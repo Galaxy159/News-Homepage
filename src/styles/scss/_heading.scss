@@ -12,10 +12,9 @@
     position: relative;
     padding-block: 8.9rem 5.51rem;
   }
-  &__logo {
-  }
+
   &__menu {
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
 
     @include respond(desktop) {
@@ -34,6 +33,7 @@
     grid-template-rows: repeat(5, min-content);
     row-gap: 2.4rem;
     transition: 0.5s ease-in-out;
+    z-index: 1;
 
     @include respond(desktop) {
       grid-template-columns: repeat(5, min-content);
@@ -69,6 +69,19 @@
   }
 }
 
+.overlay {
+  background-color: rgba(0, 0, 26, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
 .show {
   right: 0;
+}
+
+.hide {
+  display: none;
 }

@@ -3,8 +3,8 @@ import menu from "../images/icon-menu.svg";
 import menuClose from "../images/icon-menu-close.svg";
 import { useState } from "react";
 
-export default function Heading() {
-  const [clicked, setClicked] = useState(false);
+export default function Heading(props) {
+  const { clicked, setClicked } = props;
   return (
     <>
       <header className="header">
@@ -32,6 +32,7 @@ export default function Heading() {
             Categories
           </a>
         </nav>
+        <div className={clicked ? "overlay" : "overlay hide"}></div>
       </header>
     </>
   );
