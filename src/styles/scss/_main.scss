@@ -95,6 +95,11 @@
       line-height: 3.2rem;
       color: $color-primary-orange;
       margin-bottom: 3.5rem;
+
+      @include respond(desktop) {
+        font-size: 4rem;
+        line-height: 4rem;
+      }
     }
     &--item {
       &-headline {
