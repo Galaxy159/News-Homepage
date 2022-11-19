@@ -7,9 +7,9 @@ $color-grayish-blue-dark: #5d5f79;
 $color-blue-dark: #00001a;
 
 // Media
-@mixin respont($breakpoint) {
+@mixin respond($breakpoint) {
   @if $breakpoint == desktop {
-    @media (min-width: 480px) {
+    @media (min-width: 1100px) {
       @content;
     }
   }
@@ -36,4 +36,8 @@ body {
 .container {
   max-width: 34.3rem;
   margin: 0 auto;
+
+  @include respond(desktop) {
+    max-width: 111rem;
+  }
 }

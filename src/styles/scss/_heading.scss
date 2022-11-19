@@ -7,11 +7,20 @@
   top: 0;
   background-color: $color-off-white;
   padding-block: 2.8rem 3.2rem;
+
+  @include respond(desktop) {
+    position: relative;
+    padding-block: 8.9rem 5.51rem;
+  }
   &__logo {
   }
   &__menu {
     z-index: 1;
     cursor: pointer;
+
+    @include respond(desktop) {
+      display: none;
+    }
   }
   &__nav {
     display: grid;
@@ -26,11 +35,32 @@
     row-gap: 2.4rem;
     transition: 0.5s ease-in-out;
 
+    @include respond(desktop) {
+      grid-template-columns: repeat(5, min-content);
+      position: static;
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      right: 0;
+      row-gap: 0;
+      align-content: center;
+      column-gap: 4rem;
+    }
+
     & a {
       text-decoration: none;
       color: $color-blue-dark;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
       cursor: pointer;
       transition: all 0.2s;
+
+      @include respond(desktop) {
+        line-height: 2.6rem;
+        font-size: 1.5rem;
+        color: $color-grayish-blue-dark;
+      }
 
       &:hover {
         color: $color-primary-red;

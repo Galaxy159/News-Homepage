@@ -8,11 +8,15 @@ export default function Main() {
   return (
     <>
       <main className="main">
-        <picture>
-          <source srcSet={heroDesktop} media="(min-width: 900px)"></source>
-          <img src={hero} alt="hero" className="main__hero" />
-        </picture>
-        <h1 className="main__headline">The Bright Future of Web 3.0?</h1>
+        <div className="main__hero">
+          <picture>
+            <source srcSet={heroDesktop} media="(min-width: 1110px)"></source>
+            <img src={hero} alt="hero" className="main__hero--img" />
+          </picture>
+        </div>
+        <div className="main__headline">
+          <h1>The Bright Future of Web 3.0?</h1>
+        </div>
         <div className="main__cta">
           <p className="main__cta--text">
             We dive into the next evolution of the web that claims to put the
