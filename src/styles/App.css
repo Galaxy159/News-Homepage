@@ -41,7 +41,7 @@ body {
 @media (min-width: 1100px) {
   .header {
     position: relative;
-    padding-block: 9rem 5.51rem;
+    padding-block: 8rem 5.51rem;
   }
 }
 .header__menu {
