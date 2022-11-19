@@ -65,7 +65,7 @@ export default function Main(props) {
           />
           <p className="main__article--item-index">01</p>
           <h4 className="main__article--item-headline">Reviving Retro PCs</h4>
-          <p className="main__article--text">
+          <p className="main__article--item-text">
             What happens when old PCs are given modern upgrades?
           </p>
         </div>
@@ -75,7 +75,7 @@ export default function Main(props) {
           <h4 className="main__article--item-headline">
             Top 10 Laptops of 2022
           </h4>
-          <p className="main__article--text">
+          <p className="main__article--item-text">
             Our best picks for various needs and budgets.
           </p>
         </div>
