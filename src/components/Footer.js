@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <>
       <footer className="attribution">
-        Challenge by
+        Challenge by{" "}
         <a
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
@@ -12,11 +12,11 @@ export default function Footer() {
         </a>
         . Coded by{" "}
         <a
-          href="https://www.braunguitar.net"
+          href="https://www.frontendmentor.io/profile/Galaxy159"
           target="_blank"
           rel="noreferrer noopener"
         >
-          שיעורי גיטרה ברחובות
+          Galaxy159
         </a>
         .
       </footer>
